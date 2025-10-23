@@ -1,9 +1,9 @@
-//Сумма чисел от 1 до N
-function sumTo(n) {
-    let sum = 0;
-    for (let i = 1; i <= n; i++) {
-        sum +=i;
+//Степень числа
+function pow(base, exponent) {
+    let result = 1;
+    for (let i = 0; i < exponent; i++) {
+        result *= base;
     }
-    return sum;
+    return result;
 }
-console.log(sumTo(4))
+console.log(pow(5, 2));
