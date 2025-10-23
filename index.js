@@ -1,9 +1,11 @@
-//Степень числа
-function pow(base, exponent) {
-    let result = 1;
-    for (let i = 0; i < exponent; i++) {
-        result *= base;
+//Подсчёт чётных чисел
+ function countEven(n) {
+    let count = 0;
+    for (let i = 1; i<= n; i++) {
+        if (i % 2 === 0) {
+            count++
+        }
     }
-    return result;
-}
-console.log(pow(5, 2));
+    return count;
+ }
+console.log(countEven(10));
