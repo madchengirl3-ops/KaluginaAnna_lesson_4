@@ -1,7 +1,6 @@
-//Числа в диапазоне
-function printRange(start, end) {
-    for (let i = start; i <= end; i++) {
-        console.log(i);
-    }
+//Подсчет цифр в числе
+function countDigits(num) {
+    const numString = String(num);
+    return numString.length;
 }
-console.log(printRange(1, 5));
+console.log(countDigits(123456));
