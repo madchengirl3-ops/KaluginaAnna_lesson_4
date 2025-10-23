@@ -1,9 +1,7 @@
-//Повтор текста
-function repeatText(text, count) {
-    let result = '';
-    for (let i = 0; i < count; i++) {
-        result += text
+//Числа в диапазоне
+function printRange(start, end) {
+    for (let i = start; i <= end; i++) {
+        console.log(i);
     }
-    return result;
 }
-console.log(repeatText('Привет', 3));
+console.log(printRange(1, 5));
