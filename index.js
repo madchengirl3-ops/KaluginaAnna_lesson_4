@@ -1,11 +1,7 @@
-//Сумма цифр в числе
-function sumDigits(num) {
-    let sum = 0;
-    let tempNum = Math.abs(num);
-    while (tempNum > 0) {
-        sum += tempNum % 10;
-        tempNum = Math.floor(tempNum / 10);
+//Таблица умножения
+function printTable(n) {
+    for (let i = 1; i <= 10; i++) {
+        console.log(`${n} x ${i} = ${n * i}`);
     }
-    return sum;
 }
-console.log(sumDigits(1234));
+console.log(printTable(7));
