@@ -1,11 +1,9 @@
-//Подсчет четных чисел
-function countEven(n) {
-    let count = 0;
+//Сумма чисел от 1 до N
+function sumTo(n) {
+    let sum = 0;
     for (let i = 1; i <= n; i++) {
-        if (i % 2 === 0) {
-            count++;
-        }
+        sum +=i;
     }
-    return count;
+    return sum;
 }
-console.log(countEven(10));
+console.log(sumTo(4))
